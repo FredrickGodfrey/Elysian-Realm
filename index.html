@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Blog Kota Lhokseumawe</title>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="./img/logo.png" class="nav-logo" alt="">
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" id="nav-btn">
+            <i class="bi bi-list text-white fs-1"></i>
+        </button>
+
+        <div class="collapse navbar-collapse show">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://infolhokseumawe.com/">Tentang Kota</a></li>
+
+                <!-- Kontak dengan QR -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Kontak</a>
+                    <ul class="dropdown-menu p-3 text-center">
+                        <li>
+                            <p>Scan QR untuk WhatsApp</p>
+                            <img src="./img/whatsapp-qr.png" alt="WhatsApp QR" width="150">
+                        </li>
+                        <li class="mt-2"><a class="dropdown-item" href="https://api.whatsapp.com/qr/7HYMCP3U2ZBZE1?autoload=1&app_absent=0" target="_blank">Chat via WhatsApp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- SIDEBAR MOBILE -->
+<aside class="sidebar" id="sidebar">
+    <div>
+        <button id="close-btn" class="close-btn">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <ul class="sidebar-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="https://infolhokseumawe.com/">Tentang Kota</a></li>
+            <li>
+                <a href="#" data-toggle="collapse" data-target="#whatsappCollapse">Kontak</a>
+                <div id="whatsappCollapse" class="collapse mt-2 text-center">
+                    <img src="./img/whatsapp-qr.png" alt="WhatsApp QR" width="150">
+                    <p class="mt-1"><a href="https://api.whatsapp.com/qr/7HYMCP3U2ZBZE1?autoload=1&app_absent=0" target="_blank">Chat via WhatsApp</a></p>
+                </div>
+            </li>
+            <li><a href="blog.html">Artikel</a></li>
+        </ul>
+
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/share/181oBQKMW7/"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/muhammadfajarrrrv?igsh=MXZ2ZXp0eWd5b3hoaw=="><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://youtube.com/@crimson004?si=_0uxg9TeOVuNpfB8"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+    </div>
+</aside>
+
+<!-- HERO SLIDER -->
+<header class="hero">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="./img/slide1.jpg" class="d-block w-100 banner-img" alt="">
+                <div class="carousel-caption">
+                    <h3>Pantai Ujong Blang</h3>
+                    <p>Wisata favorit Kota Lhokseumawe</p>
+                    <a href="https://www.detik.com/sumut/wisata/d-7077277/5-destinasi-wisata-di-lhokseumawe-yang-wajib-dikunjungi" class="btn btn-slide" target="_blank">Selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./img/slide2.jpg" class="d-block w-100 banner-img" alt="">
+                <div class="carousel-caption">
+                    <h3>Mie Aceh</h3>
+                    <p>Kuliner khas yang wajib dicoba</p>
+                    <a href="https://www.idntimes.com/food/dining-guide/10-kuliner-khas-lhokseumawe-ini-harus-kamu-cicipi-sekali-seumur-hidup-01-5ltmv-h5ljt2" 
+                       class="btn btn-slide" target="_blank">Selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./img/slide3.jpg" class="d-block w-100 banner-img" alt="">
+                <div class="carousel-caption">
+                    <h3>Lhokseumawe</h3>
+                    <p>Kota Petro Dollar</p>
+                    <a href="https://regional.kompas.com/read/2023/10/12/212524978/mengapa-lhokseumawe-dijuluki-kota-petro-dollar?page=all" 
+                       class="btn btn-slide" target="_blank">Selengkapnya</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- POPULAR POSTS -->
+<section class="popular-post pt-5">
+    <div class="container">
+
+        <div class="section-title text-center">
+            <h2>Artikel Populer</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="row mt-4">
+
+            <!-- Wisata -->
+            <div class="col-md-4">
+                <a href="https://www.detik.com/sumut/wisata/d-7077277/5-destinasi-wisata-di-lhokseumawe-yang-wajib-dikunjungi" 
+                   class="project" target="_blank">
+                    <img src="./img/blog4.jpg" class="project-img" alt="">
+                    <h4>5 Destinasi Wisata Lhokseumawe</h4>
+                    <p>Wisata</p>
+                </a>
+            </div>
+
+            <!-- Kuliner -->
+            <div class="col-md-4">
+                <a href="https://www.idntimes.com/food/dining-guide/10-kuliner-khas-lhokseumawe-ini-harus-kamu-cicipi-sekali-seumur-hidup-01-5ltmv-h5ljt2" 
+                   class="project" target="_blank">
+                    <img src="./img/blog2.jpg" class="project-img" alt="">
+                    <h4>Kuliner Wajib</h4>
+                    <p>Kuliner</p>
+                </a>
+            </div>
+
+            <!-- Sejarah -->
+            <div class="col-md-4">
+                <a href="https://www.detik.com/sumut/detiksumut/d-7077345/sejarah-kota-lhokseumawe-di-aceh-utara" 
+                   class="project" target="_blank">
+                    <img src="./img/blog3.jpg" class="project-img" alt="">
+                    <h4>Sejarah Lhokseumawe</h4>
+                    <p>Sejarah</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTAGE -->
+<section class="footage mt-5">
+    <div class="container">
+
+        <div class="section-title text-center">
+            <h2>Footage</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="row text-center mt-4">
+
+            <!-- Video Wisata -->
+            <div class="col-md-4">
+                <div class="cat-box">
+                    <i class="bi bi-camera-video-fill ser-icon"></i>
+                    <h4>Video Wisata</h4>
+                    <iframe width="100%" height="200" 
+                        src="https://www.youtube.com/embed/GgxijgcU5-w" 
+                        title="Video Wisata Lhokseumawe" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Video Kuliner -->
+            <div class="col-md-4">
+                <div class="cat-box">
+                    <i class="bi bi-camera-video-fill ser-icon"></i>
+                    <h4>Video Kuliner</h4>
+                    <iframe width="100%" height="200" 
+                        src="https://www.youtube.com/embed/2two90Z4CZs" 
+                        title="Video Kuliner Lhokseumawe" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Video Sejarah -->
+            <div class="col-md-4">
+                <div class="cat-box">
+                    <i class="bi bi-film ser-icon"></i>
+                    <h4>Video Sejarah</h4>
+                    <iframe width="100%" height="200" 
+                        src="https://www.youtube.com/embed/3OyK4-GsZOk" 
+                        title="Video Sejarah Lhokseumawe" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center mt-5">
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/share/181oBQKMW7/"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/muhammadfajarrrrv?igsh=MXZ2ZXp0eWd5b3hoaw=="><i class="bi bi-instagram"></i></a></li>
+        <li><a href="https://youtube.com/@crimson004?si=_0uxg9TeOVuNpfB8"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+    <p>&copy; <span id="date"></span> Blog Lhokseumawe. All Rights Reserved.</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
